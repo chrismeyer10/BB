@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">BahnAndBike</string>
+    <string name="app_subtitle">Simple travel planning for rail and bike</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_trips">Trips</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="home_title">Your daily overview at a glance</string>
+    <string name="home_summary">Start with a clear dashboard for active routes, upcoming departures and quick status information.</string>
+
+    <string name="trips_title">Plan and review your trips</string>
+    <string name="trips_summary">Keep a simple area for saved routes, station stops and bike-friendly connections in one place.</string>
+
+    <string name="profile_title">Manage your preferences</string>
+    <string name="profile_summary">Use this section for account settings, favorite stations and travel preferences as the app grows.</string>
+
+    <string name="overview_title">Overview</string>
+    <string name="overview_stat_routes_value">12</string>
+    <string name="overview_stat_routes_label">Saved routes</string>
+    <string name="overview_stat_saved_value">3</string>
+    <string name="overview_stat_saved_label">Favorites</string>
+    <string name="overview_stat_status_value">Live</string>
+    <string name="overview_stat_status_label">Network status</string>
+
+    <string name="next_step_title">Next step</string>
+    <string name="next_step_body">This area is ready for your %1$s screen content and gives you a solid default layout to build on.</string>
+    <string name="next_step_hint">Bottom navigation is already connected and ready for further screens.</string>
 </resources>
