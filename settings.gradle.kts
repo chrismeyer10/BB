@@ -24,4 +24,13 @@ dependencyResolutionManagement {
 
 rootProject.name = "BahnAndBike"
 include(":app")
- 
+include(":core:common")
+include(":core:model")
+include(":core:designsystem")
+include(":domain:routing")
+include(":data:bike")
+include(":data:rail")
+include(":data:places")
+include(":feature:search")
+include(":feature:journey")
+include(":feature:settings")

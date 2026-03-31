@@ -40,6 +40,15 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:designsystem"))
+    implementation(project(":core:model"))
+    implementation(project(":domain:routing"))
+    implementation(project(":data:bike"))
+    implementation(project(":data:places"))
+    implementation(project(":data:rail"))
+    implementation(project(":feature:search"))
+    implementation(project(":feature:journey"))
+    implementation(project(":feature:settings"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

@@ -1,4 +1,4 @@
-package com.example.bahnandbike.ui.theme
+package com.example.bahnandbike.core.designsystem.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.example.bahnandbike.ui.theme
+package com.example.bahnandbike.core.designsystem.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
@@ -25,16 +25,17 @@ private val DarkColorScheme = darkColorScheme(
     secondary = MintTint,
     tertiary = CreamTint,
     background = Ink,
-    surface = ColorTokens.darkSurface,
-    surfaceVariant = ColorTokens.darkSurfaceVariant,
+    surface = Ink.copy(alpha = 0.88f),
+    surfaceVariant = SoftInk.copy(alpha = 0.32f),
     onPrimary = Ink,
     onSecondary = Ink,
     onTertiary = Ink,
     onBackground = CardWhite,
     onSurface = CardWhite,
-    onSurfaceVariant = ColorTokens.darkOnSurfaceVariant
+    onSurfaceVariant = CardWhite.copy(alpha = 0.74f)
 )
 
+// Applies the shared BahnAndBike Material theme to app content.
 @Composable
 fun BahnAndBikeTheme(
     darkTheme: Boolean = false,
@@ -42,13 +43,7 @@ fun BahnAndBikeTheme(
 ) {
     MaterialTheme(
         colorScheme = if (darkTheme) DarkColorScheme else LightColorScheme,
-        typography = Typography,
+        typography = BahnAndBikeTypography,
         content = content
     )
-}
-
-private object ColorTokens {
-    val darkSurface = Ink.copy(alpha = 0.88f)
-    val darkSurfaceVariant = SoftInk.copy(alpha = 0.32f)
-    val darkOnSurfaceVariant = CardWhite.copy(alpha = 0.74f)
 }
