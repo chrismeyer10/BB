@@ -37,7 +37,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.bahnandbike.feature.search.R
-import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MapStyleOptions
@@ -156,11 +155,9 @@ fun SearchMapBackground(mapLocation: MapLocationUiState, modifier: Modifier = Mo
     }
 
     LaunchedEffect(mapLocation) {
-        cameraPositionState.animate(
-            CameraUpdateFactory.newLatLngZoom(
-                LatLng(mapLocation.latitude, mapLocation.longitude),
-                13f
-            )
+        cameraPositionState.position = CameraPosition.fromLatLngZoom(
+            LatLng(mapLocation.latitude, mapLocation.longitude),
+            13f
         )
     }
 
