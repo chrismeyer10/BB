@@ -30,7 +30,8 @@ object AppStateFactory {
             startStationName = request.startStation.name,
             destinationStationName = request.destinationStation.name,
             fallbackLatitude = request.startPlace.latitude,
-            fallbackLongitude = request.startPlace.longitude
+            fallbackLongitude = request.startPlace.longitude,
+            hasMapsApiKey = BuildConfig.HAS_MAPS_API_KEY
         )
     }
 

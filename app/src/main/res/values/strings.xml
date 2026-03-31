@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">BahnAndBike</string>
-    <string name="google_maps_key">YOUR_GOOGLE_MAPS_API_KEY</string>
     <string name="app_subtitle">Simple travel planning for rail and bike</string>
 
     <string name="nav_home">Home</string>

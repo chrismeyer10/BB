@@ -96,6 +96,14 @@ fun SearchScreen(model: SearchUiModel, modifier: Modifier = Modifier) {
                 .statusBarsPadding()
                 .padding(horizontal = 20.dp, vertical = 16.dp)
         )
+        if (!model.hasMapsApiKey) {
+            MissingMapsKeyBanner(
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .statusBarsPadding()
+                    .padding(top = 116.dp, start = 20.dp, end = 20.dp)
+            )
+        }
         SearchRoutePanel(
             model = model,
             mapLocation = mapLocation,
@@ -103,6 +111,33 @@ fun SearchScreen(model: SearchUiModel, modifier: Modifier = Modifier) {
             onToggle = { isPanelExpanded = !isPanelExpanded },
             modifier = Modifier.align(Alignment.BottomCenter)
         )
+    }
+}
+
+// Renders a clear warning when the Google Maps API key is not configured locally.
+@Composable
+fun MissingMapsKeyBanner(modifier: Modifier = Modifier) {
+    Surface(
+        modifier = modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(22.dp),
+        color = MaterialTheme.colorScheme.tertiary.copy(alpha = 0.92f)
+    ) {
+        Column(
+            modifier = Modifier.padding(horizontal = 16.dp, vertical = 14.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp)
+        ) {
+            Text(
+                text = stringResource(R.string.map_missing_key_title),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+                color = MaterialTheme.colorScheme.onTertiary
+            )
+            Text(
+                text = stringResource(R.string.map_missing_key_body),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onTertiary
+            )
+        }
     }
 }
 

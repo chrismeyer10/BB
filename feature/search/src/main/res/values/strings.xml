@@ -3,6 +3,8 @@
     <string name="map_last_location">Last known position</string>
     <string name="map_preview_location">Preview position</string>
     <string name="map_permission_location">Location permission missing</string>
+    <string name="map_missing_key_title">Google Maps key missing</string>
+    <string name="map_missing_key_body">Add MAPS_API_KEY to local.properties so the real map tiles can load.</string>
     <string name="search_map_title">Bike and rail journey planning</string>
     <string name="search_map_subtitle">Use the live map as the foundation and slide the route panel to plan the full trip.</string>
     <string name="route_panel_expand">Expand route panel</string>
