@@ -1,0 +1,18 @@
+<resources>
+    <string name="map_live_location">Current position</string>
+    <string name="map_last_location">Last known position</string>
+    <string name="map_preview_location">Preview position</string>
+    <string name="map_permission_location">Location permission missing</string>
+    <string name="search_map_title">Bike and rail journey planning</string>
+    <string name="search_map_subtitle">Use the live map as the foundation and slide the route panel to plan the full trip.</string>
+    <string name="route_panel_expand">Expand route panel</string>
+    <string name="route_panel_collapse">Collapse route panel</string>
+    <string name="route_panel_title">Route setup</string>
+    <string name="route_panel_hint">Slide this card up and down while keeping the map in view.</string>
+    <string name="route_panel_location_label">Map center</string>
+    <string name="route_panel_start_label">Start</string>
+    <string name="route_panel_destination_label">Destination</string>
+    <string name="route_panel_bike_out_label">Bike to station</string>
+    <string name="route_panel_bike_in_label">Bike from station</string>
+    <string name="route_panel_action">Route editing comes next</string>
+</resources>
