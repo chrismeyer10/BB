@@ -28,7 +28,9 @@ object AppStateFactory {
             startName = request.startPlace.name,
             destinationName = request.destinationPlace.name,
             startStationName = request.startStation.name,
-            destinationStationName = request.destinationStation.name
+            destinationStationName = request.destinationStation.name,
+            fallbackLatitude = request.startPlace.latitude,
+            fallbackLongitude = request.startPlace.longitude
         )
     }
 

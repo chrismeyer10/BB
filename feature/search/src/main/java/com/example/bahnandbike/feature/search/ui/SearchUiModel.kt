@@ -5,5 +5,7 @@ data class SearchUiModel(
     val startName: String,
     val destinationName: String,
     val startStationName: String,
-    val destinationStationName: String
+    val destinationStationName: String,
+    val fallbackLatitude: Double,
+    val fallbackLongitude: Double
 )
